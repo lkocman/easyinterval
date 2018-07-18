@@ -1,0 +1,5 @@
+debugtoken*
+*.sublime-project
+*.sublime-workspace
+unsigned/
+signed/
