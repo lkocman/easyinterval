@@ -1,0 +1,8 @@
+#!/bin/bash
+
+read -s -p "Enter Password for signing: " PASSWORD
+rm -rf outputs/easyinterval.zip
+cd src
+zip -r ../outputs/easyinterval.zip .
+cd ..
+bbwp outputs/easyinterval.zip -buildId $1 -g $PASSWORD -o signed/

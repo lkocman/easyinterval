@@ -1,0 +1,5 @@
+#!/bin/bash
+
+read -s -p "Enter password for device: " PASSWORD
+blackberry-deploy -installApp -password $PASSWORD -device 169.254.0.1 -package unsigned/device/easyinterval.bar
+

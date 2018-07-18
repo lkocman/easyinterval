@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0.6" id="EasyIntervalaf7e98757b9bbdbe85556ba4a4dcc7">
+ 
+  <author href="http://www.luboskocman.com/" rim:copyright="Copyright 2012-* LUBOSKOCMAN.COM">Lubos Kocman</author>
+ 
+  <name>Easy Interval</name>
+ 
+  <description>
+    An easy to use interval timer with history for BlackBerry.
+  </description>
+ 
+  <icon src="resources/icon-150.png"/>
+ 
+  <rim:splash src="resources/splash-1280x768.png"/>
+  <rim:splash src="resources/splash-768x1280.png"/>
+  <rim:navigation mode="focus" />
+  <content src="index.htm" rim:allowInvokeParams="true"/>
+ 
+  <feature id="blackberry.ui.dialog"/>
+   
+  <feature id="blackberry.app.orientation">
+    <param name="mode" value="portrait" />
+  </feature>
+ 
+  <feature id="blackberry.app">
+    <param name="backgroundColor" value="0x000000" />
+  </feature>
+  <feature id="blackberry.identity" required="true" version="1.0.0.0"/>
+  <feature id="community.preventsleep" required="true" version="1.0.0.0" />
+ 
+  <license href="http://www.luboskocman.com/"/>
+ 
+</widget>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<!--
+* Copyright (c) 2012 Lubos Kocman. All rights reserved.
+-->
+
+<div data-bb-type="screen" data-bb-effect="fade" style="background-color: #333;">
+	<div data-bb-type="title" data-bb-caption="Toggle Buttons" data-bb-back-caption="Back" ></div>
+	<style>
+		.cell {
+			line-height: 100px;
+			height: 100px;
+			vertical-align: middle;
+		}
+		.first {
+			width: 350px;
+		}
+
+		.digital {
+			font-family: "LiquidCrystal";
+		}
+
+		@font-face {
+			font-family: "LiquidCrystal";
+			font-weight: bold;
+			src: url("resources/LiquidCrystal-Bold.otf");
+		}
+
+
+	</style>
+	<div style="margin:15px;">
+		<div style="text-align: center;" id="digitizerwrap"> 
+			<!--<div id="int1_label" class="digital">00:00</div>
+			<div id="int2_label" class="digital">00:00</div>-->
+			<div class="digital" style="text-align: center; font-size: 1em; color: #ffffff;">
+				<span style="display:none;" id="delay_label">10 seconds delay</span>
+				<span>Repetions: </span><span id="repetions_label" >0</span>
+			</div>
+		</div>
+	</div>
+	<div data-bb-type="action-bar">
+		<div data-bb-type="action" data-bb-style="button" data-bb-img="resources/clear.png" onclick="stopInterval();bb.pushScreen('menu.htm', 'menu');">Cancel</div>
+	</div>
+</div>
+	
