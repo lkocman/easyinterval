@@ -3,3 +3,5 @@ debugtoken*
 *.sublime-workspace
 unsigned/
 signed/
+.DS_Store
+outputs/
